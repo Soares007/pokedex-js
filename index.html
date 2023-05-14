@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Pokedex</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="src/css/reset.css">
+	<link rel="stylesheet" href="src/css/style.css">
+	<link rel="stylesheet" href="src/css/scrollbar.css">
+</head>
+
+<body>
+	<header>
+		<a href="#">
+			<img src="./src/imagens/pokeball.png" alt="pokebola" class="logo" />
+		</a>
+		<a href="#">
+			<img src="src/imagens/pokemon-logo-8.png" alt="pokemon" class="logo-pokemon">
+		</a>
+		<button id="botao-alterar-tema">
+			<img src="./src/imagens/sun.png" alt="imagem do sol" class="imagem-botao" />
+		</button>
+	</header>
+	<div class="buttons">
+		<button id="previous-button" class="previous-button"></button>
+		<button id="next-button" class="next-button"></button>
+	</div>
+	<main>
+		<ul class="listagem-pokemon">
+			<li class="cartao-pokemon">
+				<div class="informacoes">
+					<span id="name" class="name"></span>
+					<span class="text">Nº</span>
+					<span id="id" class="id"></span>
+				</div>
+				<img id="image" class="gif" />
+				<p id="status"></p>
+				<ul id="types" class="tipos">
+				</ul>
+			</li>
+
+			<li class="cartao-infos">
+				<div class="abilities">
+					<h4>Habilidades:</h4>
+					<ul id="abilities"></ul>
+				</div>
+				<img class="img-centro" src="./src/imagens/pokeball-opened.png" alt="pokebola" class="logo" />
+				<div class="evolutions">
+					<h4>Evoluções:</h4>
+					<ul id="evolutions" class="img-evolution"></ul>
+				</div>
+
+			</li>
+		</ul>
+	</main>
+	<script src="src/js/script.js"></script>
+</body>
+
+</html>
