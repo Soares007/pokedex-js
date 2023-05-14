@@ -10,7 +10,7 @@ body {
 body.modo-escuro {
 	background-image: url(../imagens/modo-escuro.png);
 	background-size: contain;
-	padding-bottom: 70px;
+	padding-bottom: 80px;
 }
 
 header {
